@@ -114,7 +114,8 @@ qmake-qt5 \
 	QMAKE_CXX="%{__cxx}" \
 	QMAKE_CXXFLAGS_RELEASE="%{rpmcxxflags}" \
 	QMAKE_LFLAGS_RELEASE="%{rpmldflags}" \
-	WEB_MACHINE=%{?with_webengine:webengine}%{!?with_webengine:webkit}
+	%{?with_webengine:USE_WEBENGINE=1} \
+	%{!?with_webengine:USE_WEBKIT=1}
 
 %{__make}
 
