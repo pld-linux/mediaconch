@@ -6,7 +6,7 @@ Summary:        Implementation checker and policy checker for video and audio fi
 Summary(pl.UTF-8):	Narzędzie do sprawdzania implementacji i polityki dla plików audio i wideo (CLI)
 Name:		mediaconch
 Version:	18.03.2
-Release:	1
+Release:	2
 License:	BSD or Apache v2.0 or LGPL v2.1+ or GPL v2+ or MPL v2.0+
 Group:		Applications/Multimedia
 Source0:	https://mediaarea.net/download/source/mediaconch/%{version}/%{name}_%{version}.tar.xz
