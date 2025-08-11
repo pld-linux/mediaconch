@@ -6,11 +6,12 @@ Summary:        Implementation checker and policy checker for video and audio fi
 Summary(pl.UTF-8):	Narzędzie do sprawdzania implementacji i polityki dla plików audio i wideo (CLI)
 Name:		mediaconch
 Version:	18.03.2
-Release:	4
+Release:	5
 License:	BSD or Apache v2.0 or LGPL v2.1+ or GPL v2+ or MPL v2.0+
 Group:		Applications/Multimedia
 Source0:	https://mediaarea.net/download/source/mediaconch/%{version}/%{name}_%{version}.tar.xz
 # Source0-md5:	265c683d0bd68458f537cb1f811ca10f
+Patch0:		build.patch
 URL:		https://mediaarea.net/MediaConch
 BuildRequires:	OpenGL-devel
 BuildRequires:	Qt5Core-devel >= 5
@@ -90,6 +91,7 @@ plików audiowizualnych (w szczególności Matroska, LPCM i FFV1).
 %setup -q -n MediaConch
 %undos *.html *.txt Release/*.txt
 chmod 644 *.html *.txt Release/*.txt
+%patch -P0 -p1
 
 %build
 # build CLI
